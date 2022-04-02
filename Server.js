@@ -18,6 +18,9 @@ app.use(cors());
 //Parseo de solicitudes entrantes
 app.use(express.json());
 
+//Conexión Base de datos
+dbConnection();
+
 
 app.listen(port, ()=>{
     console.log(`Servidor corriendo en el puerto ${port}`);
