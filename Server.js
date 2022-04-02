@@ -21,6 +21,8 @@ app.use(express.json());
 //Conexión Base de datos
 dbConnection();
 
+//rutas 
+app.use("/exercises", require("./routes/busquedas"))
 
 app.listen(port, ()=>{
     console.log(`Servidor corriendo en el puerto ${port}`);
