@@ -9,3 +9,7 @@ const dbConnection = async () => {
     throw new Error("Error al iniciar la base de datos");
   }
 };
+
+module.exports={
+  dbConnection
+}

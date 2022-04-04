@@ -11,11 +11,11 @@ const busquedasSchema = new Schema(
             required:true
         },
         lat:{
-            type:number, 
+            type:Number, 
             required:true
         },
         lon:{
-            type:number, 
+            type:Number, 
             required:true
         },
         country:{
@@ -32,3 +32,7 @@ const busquedasSchema = new Schema(
         }, 
     }
 )
+
+
+//Exporto el modelo 
+module.exports = model("Busqueda", busquedasSchema);
